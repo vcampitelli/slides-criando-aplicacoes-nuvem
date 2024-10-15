@@ -535,29 +535,11 @@
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso frontend &raquo; S3</h1>
                         <h2><em>Buckets</em></h2>
-                        <div class="r-stack">
-                            <div class="fragment fade-out" data-fragment-index="0">
-                                <h3><em>Acessando os Buckets</em></h3>
-                                <p>Acessamos o S3 para gerenciar e armazenar arquivos na nuvem de forma segura e escalável</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible" data-fragment-index="0">
-                                <h3><em>Criando e Configurando um Bucket</em></h3>
-                                <p>Criamos um bucket para armazenar arquivos. Ele funcionará como um diretório na nuvem</p>
-                                <img src="img/S3/S3-2.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo Propriedades do Bucket</em></h3>
-                                <p>Definimos um nome único e propriedades para personalizar como o bucket funcionará, incluindo permissões e locais de armazenamento</p>
-                                <img src="img/S3/S3-7.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment">
-                                <h3><em>Verificando Propriedades do Bucket</em></h3>
-                                <p>Agora é possível verificar as propriedades do bucket recém-criado para garantir que está configurado corretamente</p>
-                                <img src="img/S3/S3-8.png" alt="Acessando os buckets">
-                            </div>
-                        </div>
-                    </section>       
+                        <p>Criamos um bucket no S3 para armazenar arquivos de maneira segura e escalável na nuvem. Esse processo é essencial para garantir que nossos dados estejam organizados e acessíveis a partir de qualquer lugar, atendendo às necessidades de escalabilidade e segurança da aplicação. Definimos propriedades como o nome único do bucket, permissões e a região de armazenamento para garantir o desempenho ideal</p>
+                        <blockquote>
+                            Segue um diagrama mostrando o bucket recém-criado e sua configuração completa
+                        </blockquote>
+                    </section>      
                 </section>
                 <!-- S3 -->
 
@@ -624,33 +606,12 @@
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso frontend &raquo; CloudFront</h1>
                         <h2>Distribuição</h2>
-                        <div class="r-stack">
-                            <div class="fragment fade-out" data-fragment-index="0">
-                                <h3><em>Acessando as Distribuições</em></h3>
-                                <p>Criamos uma distribuição no CloudFront para entregar conteúdo de forma rápida e segura globalmente</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible" data-fragment-index="0">
-                                <h3><em>Definindo Propriedades da Distribuição</em></h3>
-                                <p>Definimos o domínio de origem e as políticas de cache para garantir que o conteúdo sempre seja carregado da forma mais eficiente possível</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Configurando o Certificado SSL</em></h3>
-                                <p>Selecionamos um certificado SSL para garantir a segurança e que todo o tráfego seja servido via HTTPS</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo o Root Padrão e Criando a Distribuição</em></h3>
-                                <p>Configuramos o arquivo principal (index.html) para que o CloudFront saiba qual conteúdo servir inicialmente</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment">
-                                <h3><em>Checando as Informações da Distribuição</em></h3>
-                                <p>Após a distribuição ser criada, verificamos a URL gerada e o status de propagação para testar o acesso global do conteúdo</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                        </div>
+                        <p>
+                            Configuramos o Amazon CloudFront para garantir que nosso conteúdo seja entregue de forma rápida e segura para usuários ao redor do mundo. O CloudFront utiliza uma rede global de locais de borda para cachear e distribuir o conteúdo a partir da localização mais próxima do cliente, otimizando o tempo de resposta. Definimos a origem do conteúdo, configuramos políticas de cache para melhorar a eficiência e garantimos a segurança com a integração de certificados SSL
+                        </p>
+                        <blockquote>
+                            Segue um diagrama ilustrando a distribuição global de conteúdo via CloudFront ou da das etapas de configuração na plataforma.
+                        </blockquote>
                     </section>
                 </section>
                 <!-- CloudFront -->
@@ -701,24 +662,11 @@
                     </section>
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso frontend &raquo; Route 53</h1>
-                        <h2>...</h2>
-                        <div class="r-stack">
-                            <div class="fragment fade-out" data-fragment-index="0">
-                                <h3><em>Acessando Route 53</em></h3>
-                                <p>Configuramos o Route 53 para gerenciar o DNS do nosso domínio, assegurando que o tráfego seja direcionado corretamente</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible" data-fragment-index="0">
-                                <h3><em>Selecionando a Zona Hospedada</em></h3>
-                                <p>Selecionamos a zona hospedada correspondente ao domínio que estamos gerenciando para controlar seus registros DNS</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment">
-                                <h3><em>Visualizando Registros</em></h3>
-                                <p>Aqui visualizamos e gerenciamos os registros DNS, como apontar o domínio para um servidor específico ou configurar subdomínios</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                        </div>
+                        <h2>Direcionamento</h2>
+                        <p>Gerenciamos o DNS do nosso domínio utilizamos o Amazon Route 53, assegurando que o tráfego seja direcionado corretamente para os serviços na AWS. A configuração da zona hospedada permite o controle preciso dos registros DNS, como apontar o domínio para servidores específicos, configurar subdomínios e gerenciar outras regras de roteamento. Esse serviço oferece flexibilidade e escalabilidade, integrando-se facilmente com outros serviços da AWS</p>
+                        <blockquote>
+                            Segue um diagrama ilustrando o gerenciamento DNS com o Route 53
+                        </blockquote>
                     </section>
                 </section>
                 <!-- Route 53 -->
@@ -745,43 +693,11 @@
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; EC2</h1>
                         <h2>Instância</h2>
-                        <div class="r-stack">
-                            <div class="fragment fade-out" data-fragment-index="0">
-                                <h3><em>Acessando a Execução de Instâncias</em></h3>
-                                <p>Estamos iniciando uma nova instância EC2 para hospedar nossa aplicação, criando a infraestrutura de backend na nuvem</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible" data-fragment-index="0">
-                                <h3><em>Definindo um Nome para a Instância</em></h3>
-                                <p>Aqui, definimos um nome claro para identificar facilmente nossa instância dentro do console da AWS</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Selecionando a Imagem e o Tipo da Instância</em></h3>
-                                <p>Estamos escolhendo o sistema operacional (via Amazon Machine Image) e a capacidade de hardware adequada para nossa aplicação</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo o Par de Chaves</em></h3>
-                                <p>Para garantir o acesso seguro via SSH, configuramos um par de chaves que permitirá a conexão à máquina</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Configurando a Rede</em></h3>
-                                <p>Aqui configuramos a rede da instância, assegurando que os serviços necessários (como HTTP/HTTPS) estejam acessíveis</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Criando a Instância</em></h3>
-                                <p>Finalizando as configurações, iniciamos a criação da instância. Em poucos minutos, nossa máquina estará pronta para uso</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment">
-                                <h3><em>Acessando a Instância via SSH</em></h3>
-                                <p>Após a instância ser criada, acessamos via SSH utilizando o par de chaves definido, conectando diretamente no servidor</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                        </div>
+                        <p>Por meio do EC2 provisionamos instâncias de computação na nuvem, permitindo que nossa aplicação seja hospedada de forma escalável e segura. Com essas instâncias, é possível ajustar o desempenho de hardware e o sistema operacional conforme a demanda da nossa aplicação</p>
+                        <p>Ao iniciar uma nova instância, configuramos o nome, o sistema operacional, e garantimos acesso seguro via SSH. Além disso, ajustamos a rede para permitir a conectividade dos serviços essenciais, como HTTP e HTTPS.</p>
+                        <blockquote>
+                            Segue um diagrama/imagem exemplificando o processo de criação e acesso à instância EC2.
+                        </blockquote>
                     </section>
                 </section>
                 <!-- EC2 -->
@@ -806,44 +722,16 @@
                     </section>
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; RDS</h1>
-                        <h2>Prática</h2>
-                        <div class="r-stack">
-                            <div class="fragment fade-out" data-fragment-index="0">
-                                <h3><em>Acessando o Amazon RDS</em></h3>
-                                <p>Estamos configurando um banco de dados gerenciado na nuvem, acessando o painel do RDS para iniciar o processo</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible" data-fragment-index="0">
-                                <h3><em>Definindo o Mecanismo de Banco de Dados</em></h3>
-                                <p>Selecionamos o mecanismo de banco de dados que melhor se ajusta às necessidades da nossa aplicação, como MySQL ou PostgreSQL</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo um Identificador e uma Senha</em></h3>
-                                <p>Aqui, definimos um nome exclusivo e uma senha segura para gerenciar o banco de dados com acesso restrito</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Configurando o Tamanho do Armazenamento e a Escalabilidade</em></h3>
-                                <p>Definimos o armazenamento inicial e habilitamos a escalabilidade automática para garantir que o banco de dados possa crescer conforme a demanda aumenta</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo a Conectividade</em></h3>
-                                <p>Aqui configuramos a rede para garantir que o banco de dados seja acessível apenas por fontes autorizadas, utilizando VPCs e grupos de segurança</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Criando o Banco de Dados</em></h3>
-                                <p>Concluímos as configurações e iniciamos a criação do banco de dados, o que pode levar alguns minutos</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Acessando as Propriedades</em></h3>
-                                <p>Após a criação, acessamos o endpoint do banco de dados, essencial para conectar a aplicação ao RDS de forma segura</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                        </div>
+                        <h2>Banco de Dados</h2>
+                        <p>
+                            Usamos o Amazon RDS para gerenciar nossos bancos de dados na nuvem, simplificando a configuração e operação de mecanismos como MySQL ou PostgreSQL. Através do RDS, podemos dimensionar facilmente o armazenamento conforme a demanda, e garantir que a conectividade seja restrita e segura com o uso de VPCs e grupos de segurança.
+                        </p>
+                        <p>
+                            Após definir o nome, senha, e tamanho inicial do banco, criamos a instância, que estará pronta para integrar-se à aplicação em poucos minutos.
+                        </p>
+                        <blockquote>
+                            diagrama ilustrando o processo de criação e acesso ao banco de dados no RDS.
+                        </blockquote>
                     </section>
                 </section>
                 <!-- RDS -->
@@ -907,49 +795,19 @@
                     </section> <!-- AWS Elastic Load Balancing: Conceitos -->
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; Elastic Load Balancing</h1>
-                        <h2>Prática</h2>
-                        <div class="r-stack">
-                            <div class="fragment fade-out" data-fragment-index="0">
-                                <h3><em>Acessando o Amazon ELB</em></h3>
-                                <p>Aqui estamos acessando o serviço de ELB para balancear o tráfego entre várias instâncias de servidor, começando com a criação de um load balancer</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible" data-fragment-index="0">
-                                <h3><em>Definindo o Tipo de Load Balancer</em></h3>
-                                <p>Selecionamos o tipo de load balancer mais apropriado para nosso caso, como o Application Load Balancer para balancear tráfego HTTP e HTTPS</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo um Identificador</em></h3>
-                                <p>Nomeamos o balanceador de carga para facilitar sua identificação no console da AWS</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo os Mapeamentos</em></h3>
-                                <p>Nomeamos o balanceador de carga para facilitar sua identificação no console da AWS</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Criando um Grupo de Destino</em></h3>
-                                <p>Antes de finalizar, criamos um grupo de destino, que define quais instâncias ou serviços receberão o tráfego balanceado</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Voltando à Criação do Load Balancer</em></h3>
-                                <p>Vinculamos o grupo de destino ao load balancer e configuramos o listener, incluindo protocolos de segurança como HTTP ou HTTPS</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Criando o Load Balancer</em></h3>
-                                <p>Revisamos as configurações e finalizamos a criação do load balancer</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment">
-                                <h3><em>Acessando as Propriedades do Load Balancer</em></h3>
-                                <p>Após a criação, acessamos o nome DNS gerado, que será utilizado para rotear o tráfego para as instâncias associadas</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                        </div>
+                        <h2>Balanceamento</h2>
+                        <p>
+                            A configuração do <em>Elastic Load Balancing</em> resulta em uma distribuição do tráfego entre várias instâncias de servidores, permitindo escalabilidade e alta disponibilidade. Cada nova máquina notifica o <em>Load Balancer</em> para rotear requisições adequadamente. O processo de <em>Health Check</em> garante que apenas servidores saudáveis recebem tráfego, removendo os que não estão respondendo
+                        </p>
+                        <p>
+                            Na prática, começamos criando o <em>load balancer</em>, configurando o tipo, nomeando-o e mapeando os grupos de destino e finalizamos vinculando os grupos, configurando protocolos de segurança (HTTP/HTTPS) e nunca esquecendo de revisar as configurações antes de criar o balanceador
+                        </p>
+                        <p>
+                            Após a criação, acessamos o DNS gerado para rotear o tráfego
+                        </p>
+                        <blockquote>
+                            diagrama ilustrando o processo de criação do load balancing
+                        </blockquote>
                     </section>
                 </section>
                 <!-- Elastic Load Balancing  -->
@@ -978,94 +836,13 @@
                     </section>
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; Auto Scaling</h1>
-                        <h2>...</h2>
-                        <div class="r-stack">
-                            <div class="fragment fade-out" data-fragment-index="0">
-                                <h3><em>Definindo a Instância</em></h3>
-                                <p>Começamos acessando a instância criada anteriormente para gerar uma imagem que será usada no processo de auto scaling</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible" data-fragment-index="0">
-                                <h3><em>Criando uma Imagem com Base na Instância</em></h3>
-                                <p>Selecionamos a opção para criar uma imagem da instância, que será usada para criar múltiplas instâncias no grupo de auto scaling</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo as Informações da Imagem</em></h3>
-                                <p>Fornecemos um nome descritivo para a imagem e iniciamos o processo de criação</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Checando as Imagens Criadas</em></h3>
-                                <p>Podemos verificar a criação da imagem acessando a seção Imagens > AMIs no painel de navegação</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Acessando o Auto Scaling</em></h3>
-                                <p>Agora, acessamos o serviço de Auto Scaling para configurar o grupo de instâncias que será ajustado automaticamente conforme a demanda</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo as Informações do Grupo</em></h3>
-                                <p>Fornecemos um nome para o grupo e criamos um modelo de execução que servirá de base para as instâncias do grupo</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Criando o Modelo de Execução</em></h3>
-                                <p>Durante a criação do modelo de execução, definimos o nome, descrição, AMI, tipo de instância e perfil da instância</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Finalizando a Criação do Modelo de Execução</em></h3>
-                                <p>Após revisar as configurações, clicamos em Criar Modelo de Execução para prosseguir</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Retornando à Criação do Auto Scaling</em></h3>
-                                <p>Voltamos à configuração do Auto Scaling e selecionamos o modelo recém-criado para continuar</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo a Zona de Disponibilidade</em></h3>
-                                <p>Selecionamos as Zonas de Disponibilidade e as subnets apropriadas para garantir que o Auto Scaling funcione em diferentes regiões</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Configurando o Balanceamento de Carga</em></h3>
-                                <p>Vinculamos o Auto Scaling a um balanceador de carga existente para distribuir o tráfego de forma eficaz</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Verificação de Integridade</em></h3>
-                                <p>Ajustamos o tempo de verificação de integridade de 300 para 60 segundos, garantindo uma resposta rápida</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo o Tamanho do Grupo</em></h3>
-                                <p>Aumentamos a capacidade máxima de instâncias de 1 para 10, permitindo que o grupo escale conforme necessário</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Definindo Políticas de Escalabilidade</em></h3>
-                                <p>Selecionamos a política de escalabilidade baseada em monitoramento de objetivos e ajustamos o tempo de escalabilidade para 60 segundos</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Próximas Etapas</em></h3>
-                                <p>Não configuramos notificações ou etiquetas, então podemos seguir para a próxima etapa</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment current-visible">
-                                <h3><em>Analisando e Criando o Grupo Auto Scaling</em></h3>
-                                <p>Após revisar todas as configurações, criamos o grupo Auto Scaling</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                            <div class="fragment">
-                                <h3><em>Visualizando o Grupo Auto Scaling</em></h3>
-                                <p>Podemos visualizar e gerenciar as configurações do grupo recém-criado no painel do Auto Scaling</p>
-                                <img src="img/S3/S3-1.png" alt="Acessando os buckets">
-                            </div>
-                        </div>
+                        <h2>Escalabilidade</h2>
+                        <p>
+                            Por meio do processo de configuração do <em>auto scaling</em> que envolve criar uma imagem (AMI) de uma instância existente, que será usada para gerar novas instâncias conforme necessário. Alcançamos a escalabilidade automática reduzindo o risco de sobrecarga ou ociosidade, garantindo que a aplicação tenha capacidade suficiente em momentos de pico, mas sem exceder custos em períodos de baixa demanda. Isso resulta em maior resiliência e eficiência operacional
+                        </p>
+                        <blockquote>
+                            diagrama ilustrando o processo de criação do auto scaling
+                        </blockquote>
                     </section>
                 </section>
                 <!-- Auto Scaling -->
