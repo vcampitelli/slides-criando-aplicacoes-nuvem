@@ -532,9 +532,15 @@
                 </section> <!-- Route 53 -->
 
                 <section> <!-- Arquitetura do frontend -->
-                    <h1 class="subtitle">Arquitetura</h1>
-                    <h2>Frontend</h2>
-                    <img src="/img/frontend.svg" class="inject-svg" alt="Frontend">
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1 class="subtitle">Arquitetura</h1>
+                        <h2>Frontend</h2>
+                    </section>
+                    <section data-auto-animate>
+                        <h1 class="subtitle">Arquitetura</h1>
+                        <h2>Frontend</h2>
+                        <img src="/img/frontend.svg" class="inject-svg" alt="Frontend">
+                    </section>
                 </section> <!-- Arquitetura do frontend -->
 
                 <section> <!-- EC2 -->
@@ -585,141 +591,85 @@
                     </section>
                 </section> <!-- RDS -->
 
-                <section> <!-- Elastic Load Balancing  -->
-                    <section>
+                <section> <!-- Elastic Load Balancing e Auto Scaling -->
+                    <section data-auto-animate data-auto-animate-restart>
                         <h1 class="subtitle">Serviços para nosso backend</h1>
-                        <h2>Elastic Load Balancing</h2>
+                        <h2>Escalabilidade</h2>
                     </section>
-                    <section> <!-- Load Balancer -->
-                        <h1 class="subtitle">Serviços para nosso backend &raquo; Elastic Load Balancing</h1>
-                        <h2>Definição</h2>
-                        <p>
-                            O balanceador de carga é uma ferramenta para fazer a distribuição do tráfego de rede entre
-                            destinos diferentes para permitir a escalabilidade da aplicação
-                        </p>
-                        <p>
-                            Cada vez que uma máquina é criada, ela deve avisar o <em>Load Balancer</em> para que ele
-                            atualize seu cadastro interno para poder começar a rotear as requisições para o novo serviço
-                        </p>
-
-                        <h3><em>Health check</em></h3>
-                        <p>
-                            Periodicamente, o <em>Load Balancer</em> faz checagens nos servidores cadastrados para
-                            verificar se eles estão respondendo, removendo-os se não responderem
-                        </p>
-                    </section> <!-- Load Balancer -->
-                    <section> <!-- Load Balancer -->
-                        <h1 class="subtitle">Serviços para nosso backend &raquo; Elastic Load Balancing</h1>
-                        <div class="r-stack justify-start">
-                            <h2 class="fragment fade-out" data-fragment-index="0">
-                                Arquitetura sem Load Balancer
-                            </h2>
-                            <h2 class="fragment" data-fragment-index="0">
-                                Arquitetura com Load Balancer
-                            </h2>
-                        </div>
-                        <img src="/img/diagrama.svg" class="inject-svg" alt="Arquitetura com Load Balancer">
-                    </section> <!-- Load Balancer -->
                     <section data-auto-animate>
-                        <h1 class="subtitle">Serviços para nosso backend &raquo; Elastic Load Balancing</h1>
-                        <h2>Balanceamento</h2>
-                        <p>
-                            A configuração do <em>Elastic Load Balancing</em> resulta em uma distribuição do tráfego
-                            entre várias instâncias de servidores, permitindo escalabilidade e alta disponibilidade.
-                            Cada nova máquina notifica o <em>Load Balancer</em> para rotear requisições adequadamente. O
-                            processo de <em>Health Check</em> garante que apenas servidores saudáveis recebem tráfego,
-                            removendo os que não estão respondendo
-                        </p>
-                        <p>
-                            Na prática, começamos criando o <em>load balancer</em>, configurando o tipo, nomeando-o e
-                            mapeando os grupos de destino e finalizamos vinculando os grupos, configurando protocolos de
-                            segurança (HTTP/HTTPS) e nunca esquecendo de revisar as configurações antes de criar o
-                            balanceador
-                        </p>
-                        <p>
-                            Após a criação, acessamos o DNS gerado para rotear o tráfego
-                        </p>
-                        <blockquote>
-                            diagrama ilustrando o processo de criação do load balancing
-                        </blockquote>
-                    </section>
-                </section> <!-- Elastic Load Balancing  -->
-
-                <section> <!-- Auto Scaling -->
-                    <section>
                         <h1 class="subtitle">Serviços para nosso backend</h1>
-                        <h2>Auto Scaling</h2>
+                        <h2>Escalabilidade</h2>
+                        <blockquote>
+                            Escalabilidade é uma característica desejável em todo o sistema, rede ou processo, que
+                            indica a capacidade de manipular uma porção crescente de trabalho de forma uniforme, ou
+                            estar preparado para crescer.
+                        </blockquote>
+                        <a href="https://pt.wikipedia.org/wiki/Escalabilidade" target="_blank" rel="noopener"
+                           class="reference">
+                            Escalabilidade | Wikipédia
+                        </a>
                     </section>
-                    <section>
-                        <h1 class="subtitle">Serviços para nosso backend &raquo; Auto Scaling</h1>
-                        <h2>Definição</h2>
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1 class="subtitle">Serviços para nosso backend &raquo; Escalabilidade</h1>
+                        <h2><em>Auto Scaling</em></h2>
                         <p>
-                            Serviço que monitora seus aplicativos e ajusta automaticamente a capacidade para manter um
-                            desempenho estável e previsível com o menor custo possível
+                            Serviço que monitora sua aplicação e ajusta automaticamente a capacidade <em>(ligando ou
+                            desligando servidores)</em> para manter um desempenho estável e previsível com o menor custo
+                            possível
                         </p>
-                        <p>
-                            Com ele, é fácil configurar a escalabilidade de aplicativos para vários recursos em vários
-                            serviços em minutos
-                        </p>
-
                         <a href="https://aws.amazon.com/autoscaling/" class="reference" target="_blank" rel="noopener">
                             aws.amazon.com/autoscaling
                         </a>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="subtitle">Serviços para nosso backend &raquo; Auto Scaling</h1>
-                        <h2>Escalabilidade</h2>
+                        <h1 class="subtitle">Serviços para nosso backend &raquo; Escalabilidade</h1>
+                        <h2>Configuração do <em>Auto Scaling</em></h2>
+                        <img src="/img/asg-configuracao.png" alt="Auto Scaling">
+                    </section>
+                    <section>
+                        <h1 class="subtitle">Serviços para nosso backend &raquo; Escalabilidade</h1>
+                        <h2>Balanceador de Carga</h2>
                         <p>
-                            Por meio do processo de configuração do <em>auto scaling</em> que envolve criar uma imagem
-                            (AMI) de uma instância existente, que será usada para gerar novas instâncias conforme
-                            necessário. Alcançamos a escalabilidade automática reduzindo o risco de sobrecarga ou
-                            ociosidade, garantindo que a aplicação tenha capacidade suficiente em momentos de pico, mas
-                            sem exceder custos em períodos de baixa demanda. Isso resulta em maior resiliência e
-                            eficiência operacional
+                            Ferramenta que distribui as requisições entre servidores diferentes
                         </p>
-                        <blockquote>
-                            diagrama ilustrando o processo de criação do auto scaling
-                        </blockquote>
+                        <p>
+                            Cada vez que uma máquina é criada ou excluída pelo <em>Auto Scaling</em>, o <b>Balanceador
+                            de Carga</b> é avisado para que atualize seu cadastro interno de serviços disponíveis
+                        </p>
                     </section>
-                </section> <!-- Auto Scaling -->
+                    <section>
+                        <h1 class="subtitle">Serviços para nosso backend &raquo; Escalabilidade</h1>
+                        <div class="r-stack justify-start">
+                            <h2 class="fragment fade-out" data-fragment-index="0">
+                                Arquitetura sem Balanceador de Carga
+                            </h2>
+                            <h2 class="fragment" data-fragment-index="0">
+                                Arquitetura com Balanceador de Carga
+                            </h2>
+                        </div>
+                        <img src="/img/diagrama.svg" class="inject-svg" alt="Arquitetura com Load Balancer">
+                    </section>
+                    <section data-auto-animate>
+                        <h1 class="subtitle">Serviços para nosso backend &raquo; Elastic Load Balancing</h1>
+                        <h2>Balanceador de Carga</h2>
+                        <img src="/img/alb-configuracao.png" alt="Balanceador de Carga">
+                    </section>
+                </section> <!-- Elastic Load Balancing e Auto Scaling -->
 
-                <section> <!-- Arquitetura -->
-                    <section>
-                        <h1>Arquitetura</h1>
-                    </section>
-                    <section>
-                        <h1 class="subtitle">Arquitetura</h1>
-                        <h2>Deploy</h2>
-                        <img src="/img/deploy.svg" id="svg-deploy" class="inject-svg" width="937" height="601">
-                    </section>
-
-                    <section>
+                <section> <!-- Arquitetura do backend -->
+                    <section data-auto-animate data-auto-animate-restart>
                         <h1 class="subtitle">Arquitetura</h1>
                         <h2>Backend</h2>
-                        <img src="/img/api.svg" class="inject-svg" alt="Backend">
                     </section>
-                </section> <!-- Arquitetura -->
-
-                <section> <!-- Treinamentos in company -->
-                    <h1 class="title">Treinamentos <em>in company</em></h1>
-                    <div class="d-flex cols-2 items-center">
-                        <div class="qrcode-featured-text">
-                            Gostou? Então conheça meus treinamentos corporativos e sob demanda sobre Desenvolvimento,
-                            Segurança da Informação, DevOps, Arquitetura de Sistemas e diversos outros assuntos em
-                            <a href="https://bit.ly/vcampitelli" target="_blank" rel="noopener" class="fw-bold">
-                                viniciuscampitelli.com
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://bit.ly/vcampitelli" target="_blank" rel="noopener" class="d-block">
-                                <img src="/img/qrcode-workshops.png" alt="Workshops" style="height: 300px" class="my-0">
-                            </a>
-                        </div>
-                    </div>
-                </section> <!-- Treinamentos in company -->
+                    <section data-auto-animate>
+                        <h1 class="subtitle">Arquitetura</h1>
+                        <h2>Backend</h2>
+                        <img src="/img/backend.svg" class="inject-svg" alt="Backend">
+                    </section>
+                </section> <!-- Arquitetura do backend -->
 
                 <section> <!-- Obrigado -->
-                    <h1 class="text-center title">Obrigado!</h1>
+                    <h1 class="text-center title" style="margin-left: -1.5em">Obrigado!</h1>
                     <div class="about-me-links">
                         <div>
                             <svg role="img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

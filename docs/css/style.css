@@ -176,7 +176,6 @@ td.hljs-ln-line.hljs-ln-numbers {
 /* Tipografia */
 .reveal strong, .reveal b {
   font-weight: 600;
-  color: var(--color-accent);
 }
 .text-block {
   user-select: none;
