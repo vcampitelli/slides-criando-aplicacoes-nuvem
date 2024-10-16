@@ -2,9 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="496px"
      height="342px" viewBox="-0.5 -0.5 496 342">
-    <defs>
-        <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Lato);&#xa;</style>
-    </defs>
     <g>
         <g class="fragment" data-fragment-index="0">
             <path d="M 344.75 159 L 421.76 159" fill="none" stroke="#585c64" stroke-width="2" stroke-miterlimit="10"
@@ -46,7 +43,7 @@
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="307" y="218" fill="rgb(0, 0, 0)" font-family="Lato" font-size="13px" text-anchor="middle">
+                    <text x="307" y="218" fill="rgb(0, 0, 0)" font-family="Fira Sans" font-size="13px" text-anchor="middle">
                         Load
                         Balanc...
                     </text>
@@ -79,7 +76,7 @@
                         </div>
                     </div>
                 </foreignObject>
-                <text x="172" y="179" fill="rgb(0, 0, 0)" font-family="Lato" font-size="13px" text-anchor="middle">
+                <text x="172" y="179" fill="rgb(0, 0, 0)" font-family="Fira Sans" font-size="13px" text-anchor="middle">
                     aplicacao.com.br
                 </text>
             </switch>
@@ -101,7 +98,7 @@
                         </div>
                     </div>
                 </foreignObject>
-                <text x="39" y="218" fill="#232F3E" font-family="Lato" font-size="13px" text-anchor="middle">Usuário</text>
+                <text x="39" y="218" fill="#232F3E" font-family="Fira Sans" font-size="13px" text-anchor="middle">Usuário</text>
             </switch>
         </g>
         <g class="fragment" data-fragment-index="0">
@@ -123,7 +120,7 @@
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="462" y="98" fill="rgb(0, 0, 0)" font-family="Lato" font-size="13px" text-anchor="middle">
+                    <text x="462" y="98" fill="rgb(0, 0, 0)" font-family="Fira Sans" font-size="13px" text-anchor="middle">
                         Servidor
                     </text>
                 </switch>
@@ -147,7 +144,7 @@
                         </div>
                     </div>
                 </foreignObject>
-                <text x="462" y="218" fill="rgb(0, 0, 0)" font-family="Lato" font-size="13px" text-anchor="middle">
+                <text x="462" y="218" fill="rgb(0, 0, 0)" font-family="Fira Sans" font-size="13px" text-anchor="middle">
                     Servidor
                 </text>
             </switch>
@@ -171,7 +168,7 @@
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="462" y="338" fill="rgb(0, 0, 0)" font-family="Lato" font-size="13px" text-anchor="middle">
+                    <text x="462" y="338" fill="rgb(0, 0, 0)" font-family="Fira Sans" font-size="13px" text-anchor="middle">
                         Servidor
                     </text>
                 </switch>

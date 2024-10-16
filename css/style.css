@@ -1,6 +1,5 @@
 :root {
   --r-background-color: #231f20;
-  --r-block-margin: 10px;
   --r-code-font: "JetBrains Mono", monospace;
   --r-heading-font-weight: 600;
   --r-heading-font: var(--r-main-font);
@@ -12,7 +11,7 @@
   --r-main-font-size: 32px;
   --r-main-font: "Fira Sans", sans-serif;
   --border-radius: 5px;
-  --color-accent: #0496ff;
+  --color-accent: #ff9604;
   --color-subheading: #a1a4a5;
   --color-muted: #6b6c6c;
 }
@@ -177,6 +176,7 @@ td.hljs-ln-line.hljs-ln-numbers {
 /* Tipografia */
 .reveal strong, .reveal b {
   font-weight: 600;
+  color: var(--color-accent);
 }
 .text-block {
   user-select: none;

@@ -42,7 +42,7 @@
                         <div id="about-me">
                             <div class="text-center">
                                 <figure id="profile-pic">
-                                    <img src="img/profile.jpg" alt="Vinícius Campitelli">
+                                    <img src="/img/profile.jpg" alt="Vinícius Campitelli">
                                     <figcaption id="about-me-name">Vinícius<br>Campitelli</figcaption>
                                 </figure>
                             </div>
@@ -172,7 +172,7 @@
                             <div>
                                 <a href="https://viniciuscampitelli.com/slides-criando-aplicacoes-nuvem" target="_blank"
                                    rel="noopener" class="d-block">
-                                    <img src="img/qrcode-slides.png" alt="Workshops" style="width: 300px" class="my-0">
+                                    <img src="/img/qrcode-slides.png" alt="Workshops" style="width: 300px" class="my-0">
                                 </a>
                             </div>
                             <div class="qrcode-featured-text">
@@ -293,19 +293,19 @@
                         <div class="d-flex cols-3 my-4">
                             <div class="text-center">
                                 <a href="https://aws.amazon.com/pt/" target="_blank" rel="noopener">
-                                    <img src="./img/aws.svg" alt="Amazon Web Services" style="height: 100px"><br>
+                                    <img src="/img/aws.svg" alt="Amazon Web Services" style="height: 100px"><br>
                                     Amazon Web Services
                                 </a>
                             </div>
                             <div class="text-center">
                                 <a href="https://cloud.google.com/?hl=pt-br" target="_blank" rel="noopener">
-                                    <img src="./img/gcp.svg" alt="Google Cloud Engine" style="height: 100px"><br>
+                                    <img src="/img/gcp.svg" alt="Google Cloud Engine" style="height: 100px"><br>
                                     Google Cloud Engine
                                 </a>
                             </div>
                             <div class="text-center">
                                 <a href="https://azure.microsoft.com/pt-br/" target="_blank" rel="noopener">
-                                    <img src="./img/azure.svg" alt="Microsoft Azure" style="height: 100px"><br>
+                                    <img src="/img/azure.svg" alt="Microsoft Azure" style="height: 100px"><br>
                                     Microsoft Azure
                                 </a>
                             </div>
@@ -327,7 +327,7 @@
                     <section>
                         <h1 class="subtitle">Aplicação</h1>
                         <h2>Arquitetura do exemplo</h2>
-                        <img src="./img/aplicacao.svg" class="inject-svg" alt="Aplicação">
+                        <img src="/img/aplicacao.svg" class="inject-svg" alt="Aplicação">
                     </section>
                 </section> <!-- Aplicação -->
 
@@ -407,7 +407,7 @@
                             <p class="my-0">108 zonas de disponibilidade</p>
                             <p class="my-0">245 países e territórios atendidos</p>
                         </div>
-                        <img src="./img/mapa-infra-aws.jpg" alt="Mapa de infraestrutura global da AWS"
+                        <img src="/img/mapa-infra-aws.jpg" alt="Mapa de infraestrutura global da AWS"
                              class="r-stretch mt-0" style="height: 532.364px; width: 960px;">
                         <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank"
                            rel="noopener" class="reference">aws.amazon.com</a>
@@ -443,7 +443,7 @@
                             aws.amazon.com/s3
                         </a>
                     </section>
-                    <section data-auto-animate>
+                    <section>
                         <h1 class="subtitle">Serviços para nosso frontend &raquo; Hospedagem</h1>
                         <h2>Subindo arquivos em um <em>Bucket</em></h2>
                         <video muted controls>
@@ -486,7 +486,7 @@
                         <h1 class="subtitle">Serviços para nosso frontend &raquo; CloudFront</h1>
                         <h2>Rede global de borda <em>(edge network)</em></h2>
 
-                        <img src="./img/cloudfront-mapa.png" alt="Rede global de borda do CloudFront">
+                        <img src="/img/cloudfront-mapa.png" alt="Rede global de borda do CloudFront">
                         <a href="https://aws.amazon.com/pt/cloudfront/features/#Global_Edge_Network" target="_blank"
                            rel="noopener" class="reference">
                             aws.amazon.com/cloudfront
@@ -494,148 +494,94 @@
                     </section>
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso frontend &raquo; CloudFront</h1>
-                        <h2>Distribuição</h2>
-                        <p>
-                            Configuramos o Amazon CloudFront para garantir que nosso conteúdo seja entregue de forma
-                            rápida e segura para usuários ao redor do mundo. O CloudFront utiliza uma rede global de
-                            locais de borda para cachear e distribuir o conteúdo a partir da localização mais próxima do
-                            cliente, otimizando o tempo de resposta. Definimos a origem do conteúdo, configuramos
-                            políticas de cache para melhorar a eficiência e garantimos a segurança com a integração de
-                            certificados SSL
-                        </p>
-                        <blockquote>
-                            Segue um diagrama ilustrando a distribuição global de conteúdo via CloudFront ou da das
-                            etapas de configuração na plataforma.
-                        </blockquote>
+                        <h2>Configuração</h2>
+                        <img src="/img/cloudfront-distribuicao.png" alt="Distribuição do CloudFront">
                     </section>
                 </section> <!-- CloudFront -->
 
                 <section> <!-- Route 53 -->
-                    <section>
+                    <section data-auto-animate data-auto-animate-restart>
                         <h1 class="subtitle">Serviços para nosso frontend</h1>
                         <h2>DNS</h2>
                     </section>
-                    <section>
+                    <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso frontend</h1>
                         <h2>DNS</h2>
-
-                        <p>
-                            Serviço de DNS altamente integrado com funcionalidades da AWS, onde o usuário é cobrado
-                            pelas zonas hospedadas e número de consultas realizadas
-                        </p>
-
-                        <a href="https://aws.amazon.com/pt/route53/" target="_blank" rel="noopener" class="reference">
-                            aws.amazon.com/route53
-                        </a>
-                    </section>
-                    <section>
-                        <h1 class="subtitle">Serviços para nosso frontend &raquo; Route 53</h1>
-                        <h2>DNS</h2>
-
                         <p>
                             O <em>Domain Name System</em> é um serviço que tem como principal funcionalidade a conversão
                             de domínios legíveis por seres humanos <em>(por exemplo <kbd>google.com</kbd></em>) em
                             endereços IP <em>(por exemplo <kbd>142.251.132.238</kbd></em>)
                         </p>
-
-                        <a href="https://aws.amazon.com/pt/route53/what-is-dns/" target="_blank" rel="noopener"
-                           class="reference">aws.amazon.com/route53</a>
+                        <p>
+                            Existem diversos serviços, como o
+                            <a href="https://www.cloudflare.com" target="_blank" rel="noopener">
+                                CloudFlare
+                            </a> <em>(gratuito)</em> ou
+                            <a href="https://aws.amazon.com/pt/route53/what-is-dns/" target="_blank" rel="noopener">
+                                AWS Route 53
+                            </a> <em>(pago, mas com diversas integrações com outras ferramentas da AWS)</em>
+                        </p>
                         <a href="https://www.cloudflare.com/pt-br/learning/dns/what-is-dns/" target="_blank"
                            rel="noopener" class="reference">cloudflare.com/learning/dns</a>
                     </section>
                     <section>
                         <h1 class="subtitle">Serviços para nosso frontend &raquo; Route 53</h1>
-                        <h2>Exemplos de uso</h2>
-
-                        <img src="./img/route53-diagrama.png" alt="Route 53">
-
-                        <br>
-                        <a href="https://aws.amazon.com/pt/route53/" target="_blank" rel="noopener" class="reference">
-                            aws.amazon.com/route53
-                        </a>
-                    </section>
-                    <section data-auto-animate>
-                        <h1 class="subtitle">Serviços para nosso frontend &raquo; Route 53</h1>
-                        <h2>Direcionamento</h2>
-                        <p>Gerenciamos o DNS do nosso domínio utilizamos o Amazon Route 53, assegurando que o tráfego
-                            seja direcionado corretamente para os serviços na AWS. A configuração da zona hospedada
-                            permite o controle preciso dos registros DNS, como apontar o domínio para servidores
-                            específicos, configurar subdomínios e gerenciar outras regras de roteamento. Esse serviço
-                            oferece flexibilidade e escalabilidade, integrando-se facilmente com outros serviços da
-                            AWS</p>
-                        <blockquote>
-                            Segue um diagrama ilustrando o gerenciamento DNS com o Route 53
-                        </blockquote>
+                        <h2>Configuração</h2>
+                        <img src="/img/route53-configuracao.png" alt="Configuração do Route 53">
                     </section>
                 </section> <!-- Route 53 -->
 
-                <section> <!-- EC2 -->
-                    <section>
-                        <h1 class="subtitle">Serviços para nosso backend</h1>
-                        <h2>EC2</h2>
-                    </section>
-                    <section>
-                        <h1 class="subtitle">Serviços para nosso backend &raquo; EC2</h1>
-                        <h2>Definição</h2>
-                        <p>
-                            O <em>Amazon Elastic Compute Cloud</em> é uma plataforma de computação mais ampla e
-                            profunda, com mais de 500 tipos de instâncias e opções de processador, armazenamento, rede e
-                            sistema operacional para ajudá-lo a atender melhor às necessidades de sua carga de trabalho
-                        </p>
+                <section> <!-- Arquitetura do frontend -->
+                    <h1 class="subtitle">Arquitetura</h1>
+                    <h2>Frontend</h2>
+                    <img src="/img/frontend.svg" class="inject-svg" alt="Frontend">
+                </section> <!-- Arquitetura do frontend -->
 
+                <section> <!-- EC2 -->
+                    <section data-auto-animate data-auto-animate-restart>
+                        <h1 class="subtitle">Serviços para nosso backend</h1>
+                        <h2>Computação</h2>
+                    </section>
+                    <section data-auto-animate>
+                        <h1 class="subtitle">Serviços para nosso backend</h1>
+                        <h2>Computação</h2>
+                        <p>
+                            Para executar o nosso <em>backend</em>, precisamos de uma plataforma de computação
+                            <em>("servidor")</em>, como o <strong>AWS EC2</strong> <em>(Elastic Compute Cloud)</em>
+                        </p>
                         <a href="https://aws.amazon.com/ec2/" class="reference" target="_blank" rel="noopener">
                             aws.amazon.com/ec2
                         </a>
                     </section>
-                    <section data-auto-animate>
+                    <section>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; EC2</h1>
-                        <h2>Instância</h2>
-                        <p>Por meio do EC2 provisionamos instâncias de computação na nuvem, permitindo que nossa
-                            aplicação seja hospedada de forma escalável e segura. Com essas instâncias, é possível
-                            ajustar o desempenho de hardware e o sistema operacional conforme a demanda da nossa
-                            aplicação</p>
-                        <p>Ao iniciar uma nova instância, configuramos o nome, o sistema operacional, e garantimos
-                            acesso seguro via SSH. Além disso, ajustamos a rede para permitir a conectividade dos
-                            serviços essenciais, como HTTP e HTTPS.</p>
-                        <blockquote>
-                            Segue um diagrama/imagem exemplificando o processo de criação e acesso à instância EC2.
-                        </blockquote>
+                        <h2>Configuração</h2>
+                        <img src="/img/ec2-configuracao.png" alt="EC2">
                     </section>
                 </section> <!-- EC2 -->
 
                 <section> <!-- RDS -->
-                    <section>
+                    <section data-auto-animate data-auto-animate-restart>
                         <h1 class="subtitle">Serviços para nosso backend</h1>
-                        <h2>RDS</h2>
+                        <h2>Banco de Dados</h2>
                     </section>
-                    <section>
-                        <h1 class="subtitle">Serviços para nosso backend &raquo; RDS</h1>
-                        <h2>Definição</h2>
+                    <section data-auto-animate>
+                        <h1 class="subtitle">Serviços para nosso backend</h1>
+                        <h2>Banco de Dados</h2>
                         <p>
-                            O <em>Amazon Relational Database Services</em> é uma coleção de serviços gerenciados que
-                            simplifica a configuração, operação e dimensionamento de bancos de dados na nuvem
+                            Para persistir as informações em nosso <em>backend</em>, precisamos utilizar um banco de
+                            dados, e optaremos pelo <strong>RDS</strong> <em>(Relational Database Services)</em> para
+                            simplificar a configuração, operação e dimensionamento do banco
                         </p>
 
                         <a href="https://aws.amazon.com/rds/" class="reference" target="_blank" rel="noopener">
                             aws.amazon.com/rds
                         </a>
                     </section>
-                    <section data-auto-animate>
+                    <section>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; RDS</h1>
-                        <h2>Banco de Dados</h2>
-                        <p>
-                            Usamos o Amazon RDS para gerenciar nossos bancos de dados na nuvem, simplificando a
-                            configuração e operação de mecanismos como MySQL ou PostgreSQL. Através do RDS, podemos
-                            dimensionar facilmente o armazenamento conforme a demanda, e garantir que a conectividade
-                            seja restrita e segura com o uso de VPCs e grupos de segurança.
-                        </p>
-                        <p>
-                            Após definir o nome, senha, e tamanho inicial do banco, criamos a instância, que estará
-                            pronta para integrar-se à aplicação em poucos minutos.
-                        </p>
-                        <blockquote>
-                            diagrama ilustrando o processo de criação e acesso ao banco de dados no RDS.
-                        </blockquote>
+                        <h2>Configuração</h2>
+                        <img src="/img/rds-configuracao.png" alt="RDS">
                     </section>
                 </section> <!-- RDS -->
 
@@ -672,7 +618,7 @@
                                 Arquitetura com Load Balancer
                             </h2>
                         </div>
-                        <img src="img/diagrama.svg" class="inject-svg" alt="Arquitetura com Load Balancer">
+                        <img src="/img/diagrama.svg" class="inject-svg" alt="Arquitetura com Load Balancer">
                     </section> <!-- Load Balancer -->
                     <section data-auto-animate>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; Elastic Load Balancing</h1>
@@ -744,17 +690,13 @@
                     <section>
                         <h1 class="subtitle">Arquitetura</h1>
                         <h2>Deploy</h2>
-                        <img src="img/deploy.svg" id="svg-deploy" class="inject-svg" width="937" height="601">
+                        <img src="/img/deploy.svg" id="svg-deploy" class="inject-svg" width="937" height="601">
                     </section>
-                    <section>
-                        <h1 class="subtitle">Arquitetura</h1>
-                        <h2>Frontend</h2>
-                        <img src="./img/frontend.svg" class="inject-svg" alt="Frontend">
-                    </section>
+
                     <section>
                         <h1 class="subtitle">Arquitetura</h1>
                         <h2>Backend</h2>
-                        <img src="./img/api.svg" class="inject-svg" alt="Backend">
+                        <img src="/img/api.svg" class="inject-svg" alt="Backend">
                     </section>
                 </section> <!-- Arquitetura -->
 
@@ -770,7 +712,7 @@
                         </div>
                         <div>
                             <a href="https://bit.ly/vcampitelli" target="_blank" rel="noopener" class="d-block">
-                                <img src="img/qrcode-workshops.png" alt="Workshops" style="height: 300px" class="my-0">
+                                <img src="/img/qrcode-workshops.png" alt="Workshops" style="height: 300px" class="my-0">
                             </a>
                         </div>
                     </div>
