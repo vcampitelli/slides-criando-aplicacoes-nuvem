@@ -1,0 +1,25 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - cd backend
+      - echo "Configurando cache..."
+      - composer config cache-dir /tmp/cache
+      - echo "Instalando dependências para teste..."
+      - composer install
+  build:
+    commands:
+      - echo "Rodando testes..."
+      - composer test --no-interaction
+artifacts:
+  files:
+    - 'appspec.yml'
+    - 'backend/app/**/*'
+    - 'backend/public/**/*'
+    - 'backend/src/**/*'
+    - 'backend/composer.json'
+    - 'backend/composer.lock'
+    - 'scripts/**/*'
+cache:
+  paths:
+    - '/tmp/cache/**/*'

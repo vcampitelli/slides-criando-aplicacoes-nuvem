@@ -1,0 +1,24 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - cd frontend
+      - echo "Configurando cache..."
+      - yarn config set cache-folder /tmp/yarn
+      - echo "Instalando dependências..."
+      - yarn install --prod
+  pre_build:
+    commands:
+      - echo "Rodando testes..."
+      - yarn test --ci
+  build:
+    commands:
+      - echo "Fazendo build do projeto..."
+      - yarn run build
+artifacts:
+  base-directory: frontend/build
+  files:
+    - '**/*'
+cache:
+  paths:
+    - '/tmp/yarn/**/*'

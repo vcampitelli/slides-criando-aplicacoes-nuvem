@@ -1,0 +1,47 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [ 'main' ]
+    paths:
+      - 'demo/frontend/**'
+      - '.github/workflows/frontend.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: demo/frontend
+    environment: production
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurando Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: demo/frontend/package-lock.json
+
+      - name: Instalando dependências
+        run: |
+          npm ci
+
+      - name: Rodando testes
+        run: |
+          npm run test
+
+      - name: Configura o acesso à conta da AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Copiando os arquivos para o S3
+        run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET_NAME }}
