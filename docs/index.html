@@ -18,7 +18,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=JetBrains+Mono&display=swap">
+              href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono&display=swap">
 
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -28,7 +28,7 @@
 
                 <!-- Capa -->
                 <section id="first-slide">
-                    <h1 class="title">Criando Aplicações Web<br>na Nuvem</h1>
+                    <h1 class="title">Criando<br>Aplicações Web<br>na Nuvem</h1>
                     <h2>Vinícius Campitelli</h2>
                 </section> <!-- Capa -->
 
@@ -216,11 +216,10 @@
                         <h1 class="subtitle">Computação em Nuvem</h1>
                         <h2>Conceito segundo o NIST</h2>
 
-                        <p>Características essenciais:</p>
                         <div class="fragment mb-1" data-fragment-index="0">
                             <p class="fw-bold mb-0"><em>Self-service</em> sob demanda</p>
                             <p class="fs-small mt-0">
-                                Cliente deve provisionar serviços unilateralmente sem interação humana com o provedor
+                                Cliente deve provisionar seus serviços sem interação humana com o provedor
                             </p>
                         </div>
                         <div class="fragment mb-1" data-fragment-index="1">
@@ -255,7 +254,7 @@
                     </section>
                     <section> <!-- Vantagens e desvantagens -->
                         <h1 class="subtitle">Computação em Nuvem</h1>
-                        <div class="d-flex half-columns" style="align-items: start">
+                        <div class="d-flex cols-2">
                             <div>
                                 <h2 class="mb-1">Vantagens</h2>
                                 <ul>
@@ -312,7 +311,7 @@
                         </div>
                         <div class="alert mt-2">
                             💡️ Veja mais provedores no artigo do Gartner
-                            <a href="https://www.gartner.com/technology/media-products/reprints/AWS/1-271W1OT3-PTB.html"
+                            <a href="https://www.gartner.com/technology/media-products/reprints/amazon/1-2FTPMD93-PTB.html"
                                target="_blank" rel="noopener">
                                 "Quadrante Mágico para infraestrutura em nuvem e serviços de plataforma"
                             </a>
@@ -352,13 +351,13 @@
                         <h2>Infraestrutura global</h2>
 
                         <div>
-                            <h3 class="mb-0">Regiões <em>(Regions)</em></h3>
+                            <p class="fw-bold fs-large">Regiões <em>(Regions)</em></p>
                             <p>
                                 Local físico onde um grupo de <em>datacenters</em> está localizado
                             </p>
-                            <p class="text-gray small">
+                            <div class="alert fs-small">
                                 Exemplos: São Paulo (sa-east-1), Virgínia do Norte (us-east-1) e Califórnia (us-west-1)
-                            </p>
+                            </div>
                         </div>
 
                         <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank"
@@ -369,14 +368,14 @@
                         <h2>Infraestrutura global</h2>
 
                         <div>
-                            <h3 class="mb-0 ">Zonas de disponibilidade <em>(Availability zones)</em></h3>
+                            <p class="fw-bold fs-large">Zonas de disponibilidade <em>(Availability zones)</em></p>
                             <p>
                                 Cada grupo de <em>datacenters</em> em uma região com alta conectividade entre si, úteis
                                 para prover alta disponibilidade dentro de uma região
                             </p>
-                            <p class="text-gray small">
+                            <div class="alert fs-small">
                                 Exemplos: sa-east-1a, sa-east-1b, sa-east-1c
-                            </p>
+                            </div>
                         </div>
 
                         <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank"
@@ -387,13 +386,13 @@
                         <h2>Infraestrutura global</h2>
 
                         <div>
-                            <h3 class="mb-0 ">Zonas locais <em>(Local zones)</em></h3>
+                            <p class="fw-bold fs-large">Zonas locais <em>(Local zones)</em></p>
                             <p>
                                 Locais alternativos mais próximos a grandes cidades para diminuir a latência
                             </p>
-                            <p class="text-gray small">
-                                Exemplos: Rio de Janeiro, Buenos Aires, Santiago
-                            </p>
+                            <div class="alert fs-small">
+                                Exemplos: Rio de Janeiro, Fortaleza, Buenos Aires, Santiago
+                            </div>
                         </div>
 
                         <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank"
@@ -402,13 +401,12 @@
                     <section> <!-- Infraestrutura global -->
                         <h1 class="subtitle">Amazon Web Services</h1>
                         <h2>Infraestrutura global</h2>
-                        <div class="d-flex small justify-between">
-                            <p class="my-0">34 regiões</p>
-                            <p class="my-0">108 zonas de disponibilidade</p>
-                            <p class="my-0">245 países e territórios atendidos</p>
+                        <div class="d-flex fs-small justify-between">
+                            <p class="mt-0 mb-1">34 regiões</p>
+                            <p class="mt-0 mb-1">108 zonas de disponibilidade</p>
+                            <p class="mt-0 mb-1">245 países e territórios atendidos</p>
                         </div>
-                        <img src="/img/mapa-infra-aws.jpg" alt="Mapa de infraestrutura global da AWS"
-                             class="r-stretch mt-0" style="height: 532.364px; width: 960px;">
+                        <img src="/img/mapa-infra-aws.jpg" alt="Mapa de infraestrutura global da AWS" class="my-0">
                         <a href="https://aws.amazon.com/pt/about-aws/global-infrastructure/" target="_blank"
                            rel="noopener" class="reference">aws.amazon.com</a>
                     </section> <!-- Infraestrutura global -->
@@ -444,11 +442,9 @@
                         </a>
                     </section>
                     <section>
-                        <h1 class="subtitle">Serviços para nosso frontend &raquo; Hospedagem</h1>
-                        <h2>Subindo arquivos em um <em>Bucket</em></h2>
-                        <video muted controls>
-                            <source src="/videos/s3-bucket.mp4" type="video/mp4">
-                        </video>
+                        <h1 class="subtitle">Serviços para nosso frontend &raquo; S3</h1>
+                        <h2>Criando <em>Bucket</em></h2>
+                        <img src="/img/s3-configuracao.png" alt="S3">
                     </section>
                 </section> <!-- S3 -->
 
@@ -621,7 +617,7 @@
                             aws.amazon.com/autoscaling
                         </a>
                     </section>
-                    <section data-auto-animate>
+                    <section>
                         <h1 class="subtitle">Serviços para nosso backend &raquo; Escalabilidade</h1>
                         <h2>Configuração do <em>Auto Scaling</em></h2>
                         <img src="/img/asg-configuracao.png" alt="Auto Scaling">
@@ -783,7 +779,6 @@
         <script src="reveal.js/plugin/highlight/highlight.js"></script>
         <script>
             document.querySelectorAll('img.inject-svg').forEach(($img) => {
-                console.log($img);
                 fetch($img.src).then(response => {
                     if (!response.ok) {
                         return;

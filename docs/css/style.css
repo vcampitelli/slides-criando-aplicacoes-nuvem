@@ -1,30 +1,41 @@
 :root {
-  --r-background-color: #231f20;
+  --r-background-color: #001021;
   --r-code-font: "JetBrains Mono", monospace;
   --r-heading-font-weight: 600;
+  --r-heading-color: #0caadc;
+  --color-subheading: #1481ba;
   --r-heading-font: var(--r-main-font);
   --r-heading-letter-spacing: -0.05em;
   --r-heading-text-transform: normal;
-  --r-link-color-hover: var(--color-accent);
-  --r-link-color: #027bce;
-  --r-main-color: #e4e1e6;
-  --r-main-font-size: 32px;
+  --r-link-color: #f37748;
+  --r-link-color-hover: #d56062;
+  --r-link-color-dark: #e36738;
+  --r-main-color: #ebebeb;
+  --r-main-font-size: 30px;
   --r-main-font: "Fira Sans", sans-serif;
   --border-radius: 5px;
-  --color-accent: #ff9604;
-  --color-subheading: #a1a4a5;
-  --color-muted: #6b6c6c;
+  --color-accent: var(--r-link-color-hover);
+  --color-muted: #7777aa;
+}
+
+.slide-background:first-child {
+  background: var(--r-background-color) url(../img/bg-first-slide.png) center right no-repeat;
+  background-size: contain;
+  background-blend-mode: difference;
 }
 
 /* Primeiro slide */
 #first-slide > h1 {
+  --r-heading-color: var(--r-main-color);
   --r-heading-line-height: 1;
+  --r-heading-font-weight: 700;
+  --r-heading-margin: 0 0 10px;
 }
 #first-slide > h2 {
   display: inline-block;
-  --r-heading2-size: 1.2em;
-  --r-heading-font-weight: 600;
-  --r-heading-color: var(--color-accent);
+  --r-heading2-size: 1em;
+  --r-heading-font-weight: 500;
+  --r-heading-color: var(--color-subheading);
 }
 
 /* Sobre mim */
@@ -84,6 +95,10 @@
 .qrcode-featured-text {
   line-height: 1.3;
 }
+.qrcode-featured-text > a {
+  font-size: 0.85em;
+  font-weight: 500;
+}
 
 /* Layout */
 .reveal .slides {
@@ -101,6 +116,7 @@ h1:not(:last-child):not(.title) {
   --r-heading-color: var(--color-subheading);
   --r-heading-font-weight: 500;
   --r-heading-letter-spacing: -1.4px;
+  --r-heading-line-height: 1;
 }
 .reveal .fragment.semi-fade-out.visible {
   opacity: 0.4;
@@ -168,6 +184,10 @@ td.hljs-ln-line.hljs-ln-numbers {
 .mt-2 {
   margin-top: 1em !important;
 }
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 .my-4 {
   margin-top: 3em !important;
   margin-bottom: 3em !important;
@@ -197,6 +217,9 @@ td.hljs-ln-line.hljs-ln-numbers {
 }
 .text-right {
   text-align: right;
+}
+.fs-large {
+  font-size: 1.15em;
 }
 .fs-small {
   font-size: 0.9em;
@@ -249,7 +272,7 @@ img {
   margin: 0.5em 0 0.5em 1em;
 }
 li + li {
-  margin-top: 0.3em;
+  margin-top: 0.15em;
 }
 
 /* Referências */
