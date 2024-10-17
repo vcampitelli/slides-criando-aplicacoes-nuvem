@@ -30,12 +30,13 @@ jobs:
           cache-dependency-path: demo/frontend/package-lock.json
 
       - name: Instalando dependências
-        run: |
-          npm ci
+        run: npm ci
 
       - name: Rodando testes
-        run: |
-          npm run test
+        run: npm run test
+
+      - name: Fazendo build da aplicação
+        run: npm run build
 
       - name: Configura o acesso à conta da AWS
         uses: aws-actions/configure-aws-credentials@v4
@@ -45,3 +46,6 @@ jobs:
 
       - name: Copiando os arquivos para o S3
         run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET_NAME }}
+
+      - name: Invalidando distribuição no CloudFront
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
